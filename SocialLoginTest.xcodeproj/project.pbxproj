@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BFBC3A646C709A812DB0375 /* Pods_SocialLoginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F73009B1D306D82D2B5BBB /* Pods_SocialLoginTest.framework */; };
+		7E1438C2215516EE00992114 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E1438C1215516EE00992114 /* GoogleService-Info.plist */; };
 		7E1FAA482154FA51005E7308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FAA472154FA51005E7308 /* AppDelegate.swift */; };
 		7E1FAA4A2154FA51005E7308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1FAA492154FA51005E7308 /* ViewController.swift */; };
 		7E1FAA4D2154FA51005E7308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E1FAA4B2154FA51005E7308 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46F73009B1D306D82D2B5BBB /* Pods_SocialLoginTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialLoginTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1438C1215516EE00992114 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E1FAA442154FA51005E7308 /* SocialLoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialLoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1FAA472154FA51005E7308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E1FAA492154FA51005E7308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		7E1FAA512154FA51005E7308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E1FAA542154FA51005E7308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E1FAA562154FA51005E7308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830BA780C6E41E6097E284AF /* Pods-SocialLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8CD5BB3A21BB3C051D39D7 /* Pods-SocialLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialLoginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFBC3A646C709A812DB0375 /* Pods_SocialLoginTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4043722EDBD33D59A0387132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46F73009B1D306D82D2B5BBB /* Pods_SocialLoginTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7E1FAA3B2154FA51005E7308 = {
 			isa = PBXGroup;
 			children = (
 				7E1FAA462154FA51005E7308 /* SocialLoginTest */,
 				7E1FAA452154FA51005E7308 /* Products */,
+				C0EF4013660200755EC68F48 /* Pods */,
+				4043722EDBD33D59A0387132 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +79,19 @@
 				7E1FAA512154FA51005E7308 /* Assets.xcassets */,
 				7E1FAA532154FA51005E7308 /* LaunchScreen.storyboard */,
 				7E1FAA562154FA51005E7308 /* Info.plist */,
+				7E1438C1215516EE00992114 /* GoogleService-Info.plist */,
 				7E1FAA4E2154FA51005E7308 /* SocialLoginTest.xcdatamodeld */,
 			);
 			path = SocialLoginTest;
+			sourceTree = "<group>";
+		};
+		C0EF4013660200755EC68F48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				830BA780C6E41E6097E284AF /* Pods-SocialLoginTest.debug.xcconfig */,
+				CE8CD5BB3A21BB3C051D39D7 /* Pods-SocialLoginTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E1FAA592154FA51005E7308 /* Build configuration list for PBXNativeTarget "SocialLoginTest" */;
 			buildPhases = (
+				20D42BF379653409ECF8099E /* [CP] Check Pods Manifest.lock */,
 				7E1FAA402154FA51005E7308 /* Sources */,
 				7E1FAA412154FA51005E7308 /* Frameworks */,
 				7E1FAA422154FA51005E7308 /* Resources */,
+				EAB391DA709F791E051320C4 /* [CP] Embed Pods Frameworks */,
+				ABE5767CDDD730E45BB7209D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1FAA552154FA51005E7308 /* LaunchScreen.storyboard in Resources */,
+				7E1438C2215516EE00992114 /* GoogleService-Info.plist in Resources */,
 				7E1FAA522154FA51005E7308 /* Assets.xcassets in Resources */,
 				7E1FAA4D2154FA51005E7308 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20D42BF379653409ECF8099E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialLoginTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE5767CDDD730E45BB7209D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB391DA709F791E051320C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialLoginTest/Pods-SocialLoginTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E1FAA402154FA51005E7308 /* Sources */ = {
@@ -282,6 +390,7 @@
 		};
 		7E1FAA5A2154FA51005E7308 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830BA780C6E41E6097E284AF /* Pods-SocialLoginTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +409,7 @@
 		};
 		7E1FAA5B2154FA51005E7308 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8CD5BB3A21BB3C051D39D7 /* Pods-SocialLoginTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
